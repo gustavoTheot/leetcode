@@ -36,5 +36,16 @@ function isAnagram(s, t) {
   return true
 };
 
+function theBestResolution(s, t){
+  const spli1 = s.split('').sort().join()
+  const split2 = t.split('').sort().join()
 
-console.log(isAnagram("anagram", "nagaram"));
+  if(spli1 === split2){
+    return true
+  }
+
+  return false
+}
+
+
+console.log(theBestResolution("anagram", "nagaram"));
