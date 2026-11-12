@@ -20,9 +20,17 @@ function twoSum(nums, target) {
   }
 };
 
+/*
+  1. Cria um mapa
+  2. Percorre os valores que são passados do array
+  3. pega o valor atual do indice + qual valor precisa para atingir a quantidade esperada (target)
+  4. Verifica se existe esse valor que precisa para atingir o targe
+    4.1 Tem? Ele retorna o valor + indice
+  5. Caso o valor não esteja no mapa, ele adiciona o valor + indice
+*/
 
-
-function usingTableHash(nums, target){
+// Complexidade O(N)
+function useHasing(nums, target){
   const map = new Map();
 
   for(let i = 0; i < nums.length; i++){
