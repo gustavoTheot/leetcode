@@ -26,6 +26,7 @@ function isAnagram(s, t) {
 
   if(hash1.size !== hash2.size) return false
 
+  // realiza comparação dos hash
   for (let [letter, quantity] of hash1){
     if (hash2.get(letter) !== quantity){
       return false;
