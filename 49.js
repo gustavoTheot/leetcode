@@ -37,22 +37,4 @@ console.log(response)
 
 
 
-// transformar strs em hash
-// function createHash(strs){
-//   let map = new Map();
-
-//   for(let i = 0; i < strs.length; i++){
-//     // se tiver setta o valor + hash
-//     if (map.has(strs[i])){
-//       map.get(strs[i]).push(i)
-//     } else {
-//       // sett valor + hash
-//       map.set(strs[i], i)
-//     }
-//   }
-
-//   return map;
-// }
-
-
 
